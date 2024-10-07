@@ -1,17 +1,17 @@
-# configr
+# 🍦 conefig
 
 > A cli tool to quickly pull your configuration files into a project
 
-configr uses your github repo as the source of truth for your config files. Add the files in your repo and configr will be able to pull them.
+conefig uses your github repo as the source of truth for your config files. Add the files in your repo and conefig will be able to pull them.
 
 ## Install
 
 ```sh
-npm install -g configr
+npm install -g conefig
 # or
-yarn global add configr
+yarn global add conefig
 # or
-pnpm add -g configr
+pnpm add -g conefig
 ```
 
 ## Usage
@@ -22,12 +22,12 @@ For example, you may have a github repository named "config" with a file named `
 
 [this](https://github.com/WLowe10/config) is an example.
 
-### Initialize configr
+### Initialize conefig
 
-Initialize configr by using the following command and following the instructions
+Initialize conefig by using the following command and following the instructions
 
 ```sh
-configr init
+conefig init
 ```
 
 ### Start Pulling Your Files!
@@ -35,10 +35,10 @@ configr init
 Use the `pull` command to pull files from your repo!
 
 ```sh
-configr pull
+conefig pull
 ```
 
 ## Caveats
 
--   configr only works with root level files in your github repo
--   configr only pulls from the default branch of your github repo
+-   conefig only works with root level files in your github repo
+-   conefig only pulls from the default branch of your github repo

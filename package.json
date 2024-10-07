@@ -1,5 +1,5 @@
 {
-	"name": "configr",
+	"name": "conefig",
 	"type": "module",
 	"version": "0.0.1",
 	"description": "A cli tool to quickly pull your configuration files into a project",
@@ -14,7 +14,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/WLowe10/configr"
+		"url": "https://github.com/WLowe10/conefig"
 	},
 	"files": [
 		"dist",
