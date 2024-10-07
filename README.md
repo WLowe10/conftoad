@@ -1,17 +1,17 @@
-# 🍦 conefig
+# 🐸 conftoad
 
 > A cli tool to quickly pull your configuration files into a project
 
-conefig uses your github repo as the source of truth for your config files. Add the files in your repo and conefig will be able to pull them.
+conftoad uses your github repo as the source of truth for your config files. Add the files in your repo and conftoad will be able to pull them.
 
 ## Install
 
 ```sh
-npm install -g conefig
+npm install -g conftoad
 # or
-yarn global add conefig
+yarn global add conftoad
 # or
-pnpm add -g conefig
+pnpm add -g conftoad
 ```
 
 ## Usage
@@ -22,12 +22,12 @@ For example, you may have a github repository named "config" with a file named `
 
 [this](https://github.com/WLowe10/config) is an example.
 
-### Initialize conefig
+### Initialize conftoad
 
-Initialize conefig by using the following command and following the instructions
+Initialize conftoad by using the following command and following the instructions
 
 ```sh
-conefig init
+conftoad init
 ```
 
 ### Start Pulling Your Files!
@@ -35,10 +35,10 @@ conefig init
 Use the `pull` command to pull files from your repo!
 
 ```sh
-conefig pull
+conftoad pull
 ```
 
 ## Caveats
 
--   conefig only works with root level files in your github repo
--   conefig only pulls from the default branch of your github repo
+-   conftoad only works with root level files in your github repo
+-   conftoad only pulls from the default branch of your github repo
