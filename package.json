@@ -1,0 +1,46 @@
+{
+	"name": "configr",
+	"type": "module",
+	"version": "0.0.1",
+	"description": "A cli tool to quickly pull your configuration files into a project",
+	"license": "MIT",
+	"author": {
+		"name": "Wes Lowe",
+		"email": "wesley.jlowe10@gmail.com"
+	},
+	"keywords": [
+		"cli",
+		"config"
+	],
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"files": [
+		"dist",
+		"package.json",
+		"README.md"
+	],
+	"bin": "./dist/cli.js",
+	"scripts": {
+		"build": "tsup",
+		"format": "prettier --write .",
+		"publish-package": "pnpm build && pnpm publish",
+		"clean": "pnpm clean:dist && pnpm clean:modules",
+		"clean:dist": "rm -rf dist",
+		"clean:modules": "rm -rf node_modules",
+		"typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@types/node": "^22.7.4",
+		"@types/prompts": "^2.4.9",
+		"prettier": "^3.3.2",
+		"tsup": "^8.1.0",
+		"tsx": "^4.16.2",
+		"typescript": "^5.5.3"
+	},
+	"dependencies": {
+		"commander": "^12.1.0",
+		"prompts": "^2.4.2"
+	}
+}
