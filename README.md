@@ -20,6 +20,8 @@ pnpm add -g configr
 
 For example, you may have a github repository named "config" with a file named `prettier.config.js`
 
+[this](https://github.com/WLowe10/config) is an example.
+
 ### Initialize configr
 
 Initialize configr by using the following command and following the instructions
