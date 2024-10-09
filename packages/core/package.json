@@ -1,0 +1,57 @@
+{
+	"name": "@conftoad/core",
+	"type": "module",
+	"version": "0.0.1",
+	"description": "A cli tool to quickly pull your configuration files into a project",
+	"license": "MIT",
+	"author": {
+		"name": "Wes Lowe",
+		"email": "wesley.jlowe10@gmail.com"
+	},
+	"keywords": [
+		"cli",
+		"config"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/WLowe10/conftoad"
+	},
+	"files": [
+		"dist",
+		"package.json",
+		"README.md"
+	],
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.js"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
+			}
+		}
+	},
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"format": "prettier --write .",
+		"publish-package": "pnpm build && pnpm publish",
+		"clean": "pnpm clean:dist && pnpm clean:modules",
+		"clean:dist": "rm -rf dist",
+		"clean:modules": "rm -rf node_modules",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@conftoad/core": "workspace:^",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@types/node": "^22.7.4",
+		"@types/prompts": "^2.4.9",
+		"tsup": "^8.1.0",
+		"tsx": "^4.16.2",
+		"typescript": "^5.5.3"
+	}
+}
