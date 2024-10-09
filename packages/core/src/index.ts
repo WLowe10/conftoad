@@ -40,13 +40,15 @@ export function getConfig(): Config {
 	}
 }
 
-export function getConfigSafe(): { success: true; data: Config } | { success: false } {
+export function getConfigSafe():
+	| { success: true; data: Config }
+	| { success: false; error: ConfigError } {
 	try {
 		const content = fs.readFileSync(configPath, "utf8");
 
 		return { success: true, data: configSchema.parse(JSON.parse(content)) };
 	} catch {
-		return { success: false };
+		return { success: false, error: new ConfigError("NOT_FOUND") };
 	}
 }
 
