@@ -28,7 +28,7 @@
 	"scripts": {
 		"build": "tsup",
 		"format": "prettier --write .",
-		"publish-package": "pnpm build && pnpm publish",
+		"publish-package": "pnpm build && pnpm publish --access public",
 		"clean": "pnpm clean:dist && pnpm clean:modules",
 		"clean:dist": "rm -rf dist",
 		"clean:modules": "rm -rf node_modules",
