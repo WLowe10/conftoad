@@ -21,7 +21,9 @@
 		"package.json",
 		"README.md"
 	],
-	"bin": "./dist/cli.js",
+	"bin": {
+		"conftoad": "./dist/cli.js"
+	},
 	"scripts": {
 		"build": "tsup",
 		"format": "prettier --write .",
@@ -40,6 +42,8 @@
 		"typescript": "^5.5.3"
 	},
 	"dependencies": {
+		"@conftoad/core": "workspace:^",
+		"chalk": "^5.3.0",
 		"commander": "^12.1.0",
 		"prompts": "^2.4.2"
 	}

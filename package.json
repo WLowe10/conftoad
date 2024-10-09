@@ -3,7 +3,8 @@
 	"private": true,
 	"scripts": {
 		"format": "prettier --write .",
-		"g:publish-package": "pnpm build && pnpm publish",
+		"clean": "rm -rf node_modules",
+		"g:publish-package": "pnpm -r publish-package",
 		"g:build": "pnpm -r build",
 		"g:clean": "pnpm -r clean"
 	},
