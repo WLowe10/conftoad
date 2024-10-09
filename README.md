@@ -68,36 +68,32 @@ import { getConfig } from "@conftoad/core";
 
 // throws an error if config is not defined
 const config = getConfig();
-
 ```
 
 You can also use `getConfigSafe` if thrown errors aren't your thing.
 
 ```typescript
-import { getConfig } from "@conftoad/core";
+import { getConfigSafe } from "@conftoad/core";
 
 // throws an error if config is not defined
-const config = getConfig();
-
+const result = getConfigSafe();
 ```
 
 ### Get user's repo files
 
 To get the files that are part of a user's conftoad repo,
-use `getRepoFiles`. 
+use `getRepoFiles`.
 
 Maybe you want to add the user's prettier configuration to their generated project. The procedure should be as follows
 
-1) Check if the user has conftoad configured by checking if they have configured conftoad
-2) Check if the user's github repo files have a valid prettier config in them. If they do, then you should ask the user "Would you like to use your own prettier config with conftoad?"
-
+1. Check if the user has conftoad configured by checking if they have configured conftoad
+2. Check if the user's github repo files have a valid prettier config in them. If they do, then you should ask the user "Would you like to use your own prettier config with conftoad?"
 
 ```typescript
 import { getRepoFiles } from "@conftoad/core";
 
 // throws an error if config is not defined
 const files = await getRepoFiles();
-
 ```
 
 ### Pull a file from the user's github repo
@@ -114,9 +110,7 @@ const files = await getRepoFiles();
 for (const file of files) {
 	await pullFile(file);
 
-    // you can also manually set the output location 
+	// you can also manually set the output location
 	// await pullFile(file, { cwd: "an absolute path to a directory" });
 }
-
 ```
-
