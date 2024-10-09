@@ -1,5 +1,6 @@
 {
 	"name": "@conftoad/core",
+	"private": false,
 	"type": "module",
 	"version": "0.0.1",
 	"description": "A cli tool to quickly pull your configuration files into a project",
