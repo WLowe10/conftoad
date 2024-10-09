@@ -4,9 +4,10 @@
 	"scripts": {
 		"format": "prettier --write .",
 		"clean": "rm -rf node_modules",
-		"g:publish-package": "pnpm -r publish-package",
 		"g:build": "pnpm -r build",
-		"g:clean": "pnpm -r clean"
+		"g:clean": "pnpm -r clean",
+		"g:publish-package": "pnpm -r publish-package",
+		"g:typecheck": "pnpm -r typecheck"
 	},
 	"devDependencies": {
 		"prettier": "^3.3.2"
