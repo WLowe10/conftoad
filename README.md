@@ -1,6 +1,6 @@
 # 🐸 conftoad
 
-> A cli tool to quickly pull your configuration files into a project
+> A cli tool and ecosystem to quickly pull personal configuration files into a project
 
 conftoad uses your github repo as the source of truth for your config files. Add the files in your repo and conftoad will be able to pull them.
 
