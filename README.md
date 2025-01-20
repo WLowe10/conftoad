@@ -75,7 +75,7 @@ You can also use `getConfigSafe` if thrown errors aren't your thing.
 ```typescript
 import { getConfigSafe } from "@conftoad/core";
 
-// throws an error if config is not defined
+// returns a result, does not throw any errors
 const result = getConfigSafe();
 ```
 
